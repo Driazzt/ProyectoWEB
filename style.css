@@ -51,9 +51,13 @@ table {
 
 /* RESET END */
 
-body{
-  background-color: #1a1d24;
+body {
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
+}
+
+.background{
+  background-color: #1a1d24;
 }
 
 svg {
@@ -62,49 +66,47 @@ svg {
   height: 16px;
 }
 
-a{
+a {
   color: #ffffff;
   font-family:"Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
 
-
+main{
+  background-color: #f2f2f2;
 }
 
 .wrapper{
   max-inline-size: 1200px;
-  margin-inline: auto;
+  margin: auto;
+}
+
+.header, .main-menu, .tools-menu, .social-menu   {
+  display:flex;
+
 }
 
 header {
-  display: flex;
-  max-inline-size: 1200px;
   margin-inline: auto;
   justify-content: space-between;
   align-items: center;
   height: 89px;
   padding-block: 44px 29px;
-  
-
 }
+
 .logo {
   width: 88px ;
-  height: 26px ;
-}
-
-.main-menu, .tools-menu, .social-menu   {
-  display:flex;
-  justify-content: space-between;
-  color:#ffffff;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
+  height: auto;
 }
 .main-menu{
-  gap: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  gap: 55px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .tools-menu {
@@ -113,29 +115,26 @@ header {
 }
 
 .social-menu {
-  gap: 31px;
-}
-
-section{
-  display:flex;
-  margin: 30px;
-  padding: 30px;
+  gap: 26px;
 }
 
 .hero-banner {
   position: relative;
   display: flex;
+  gap: 30px;
+  padding-bottom: 200px;
 }
 
 .hero-banner__image{
   max-width: 75%;
   max-height: 610px;
   object-fit: cover;
-  flex-basis: 74%;
+  /* ?¿¿?¿
+  flex-basis: 74%; */
 }
 .hero-banner__data{
   position: absolute;
-  bottom: 0;
+  bottom: 200px;
   right: 0;
   background-color: #1a1d24;
   max-width: 400px;
@@ -145,36 +144,19 @@ section{
 }
 .hero-banner__tittle{
   font-family: "Roboto Condensed", sans-serif;
-  display: flex;
   font-size: 37px;
-  font-weight: 700;
 }
 
 .hero-banner__description {
-  font-family: "Roboto", sans-serif;
+  color: #a8a8a8;
   font-size: 14px;
   line-height: 23px;
-  margin-block: 23px;
+  margin-block: 22px;
 }
 
 /* COMPROBAR TODO DESDE AQUI, ALGO FALLA */
 aside {
-  max-width: 25%;
-  margin-left: 25px;
-}
-
-.aside__list {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-}
-.aside__item {
-  display: flex;
-  gap:20px;
-  font-family:"Roboto Condensed", sans-serif;
-  font-size: 16px;
-
-
+  width: 25%;
 }
 
 .aside__tittle{
@@ -182,24 +164,45 @@ aside {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
+}
+
+.aside__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.aside__item {
+  display: flex;
+  gap:20px;
+}
+
+.aside__subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
   display: flex;
 }
 .asside__date{
-  display: flex;
+  color: #a8a8a8;
+  font-size: 11px;
 }
 
 .slider{
   display: flex;
   height: 400px;
-
+  gap: 20px;
 }
-.slider__slide{
-  display: flex;
-  align-items: end;
-  background-repeat: no-repeat; 
+.slider-films {
+  position: relative;
+  top: -100px;
 }
 
-.slider-films__button{
+.slider-films__buttons {
+  margin-bottom: 34px;
+}
+
+.slider-films__button {
   background-color: transparent;
   border: 0;
   color: #b8b8b8;
@@ -207,23 +210,44 @@ aside {
   text-transform: uppercase;
   font-size: 13px;
 }
-.slider1{
-  background-image:url(images/post-19-copyright-485x598.jpg);
+
+.slider__slide {
+  display: flex;
+  position: relative;
+  align-items: end;
   background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 100%; 
+}
+
+.slider__slide svg {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  translate: -50% -50%;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.slider__slide:hover svg {
+  border: 2px solid rgba(255, 255, 255, 1);
+  
+}
+
+.slider1 {
+  background-image:url(images/post-19-copyright-485x598.jpg);
 }
 .slider2{
   background-image:url(images/post-20-copyright-485x598.jpg);
-  background-repeat: no-repeat;
 }
 .slider3{
   background-image:url(images/post-23-copyright-485x665.jpg);
-  background-repeat: no-repeat;
 }
 .slider4{
   background-image:url(images/post-24-copyright-485x598.jpg);
-  background-repeat: no-repeat;
 }
 .slider5{
   background-image:url(images/post-23-copyright-485x598.jpg);
-  background-repeat: no-repeat;
 }
