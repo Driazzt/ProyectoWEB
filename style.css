@@ -1,89 +1,229 @@
-/* para que afecte a toda la web
-*{}*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET END */
 
 body{
   background-color: #1a1d24;
+  color: #ffffff;
 }
+
+svg {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+a{
+  color: #ffffff;
+  font-family:"Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 12px;
+
+
+}
+
+.wrapper{
+  max-inline-size: 1200px;
+  margin-inline: auto;
+}
+
 header {
   display: flex;
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 6%
+  height: 89px;
+  padding-block: 44px 29px;
+  
 
+}
+.logo {
+  width: 88px ;
+  height: 26px ;
 }
 
 .main-menu, .tools-menu, .social-menu   {
-  float:inline-end;
-  display: flex;
-  align-items: flex-end;
-  gap: 30px;
-  letter-spacing: 0, 02px;
-  color: #ffffff;
-  position: relative;
+  display:flex;
+  justify-content: space-between;
+  color:#ffffff;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 6%;
+}
+.main-menu{
+  gap: 35px;
 }
 
-.aside {
-  display: block;
-  position: relative;
+.tools-menu {
+  gap:100px;
+
+}
+
+.social-menu {
+  gap: 31px;
+}
+
+section{
+  display:flex;
   margin: 30px;
   padding: 30px;
 }
 
-  .aside__subtittle { 
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
+.hero-banner {
+  position: relative;
   display: flex;
-  float: inline-end;
-  text-align: start;  
-  }
-  .aside__date {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 11px;
-    text-transform: capitalize;
-    color: #a8a8a8;
-  }
+}
 
+.hero-banner__image{
+  max-width: 75%;
+  max-height: 610px;
+  object-fit: cover;
+  flex-basis: 74%;
+}
+.hero-banner__data{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #1a1d24;
+  max-width: 400px;
+  padding-top: 33px;
+  padding-left: 29px;
 
-.hero-banner__tittle {
+}
+.hero-banner__tittle{
   font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-weight: bold;
+  display: flex;
   font-size: 37px;
-  box-sizing: border-box;
-  text-align: start;
-  padding: 0px 121.5px;
-  margin: 15px;
-  color: #ffffff;
+  font-weight: 700;
 }
 
 .hero-banner__description {
   font-family: "Roboto", sans-serif;
-  font-weight: 14px;
-  font-style: normal;
-  text-align: start;
-  padding: 0px 121.5px;
-  margin: 0px -15px;
-  color: #ffffff;
-  margin: 15px
+  font-size: 14px;
+  line-height: 23px;
+  margin-block: 23px;
 }
 
-main, aside{
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: lighter;
-  font-style: normal;
-  font-size: 15, 945px;
-  text-transform: uppercase;
-  color: #ffffff;
-  display: flex;
-  float:inline-end;
-  position:relative;
+/* COMPROBAR TODO DESDE AQUI, ALGO FALLA */
+aside {
+  max-width: 25%;
+  margin-left: 25px;
+}
 
+.aside__list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.aside__item {
+  display: flex;
+  gap:20px;
+  font-family:"Roboto Condensed", sans-serif;
+  font-size: 16px;
+
+
+}
+
+.aside__tittle{
+  margin-bottom: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: flex;
+}
+.asside__date{
+  display: flex;
+}
+
+.slider{
+  display: flex;
+  height: 400px;
+
+}
+.slider__slide{
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat; 
+}
+
+.slider-films__button{
+  background-color: transparent;
+  border: 0;
+  color: #b8b8b8;
+  font-family:"Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.slider1{
+  background-image:url(images/post-19-copyright-485x598.jpg);
+  background-repeat: no-repeat;
+}
+.slider2{
+  background-image:url(images/post-20-copyright-485x598.jpg);
+  background-repeat: no-repeat;
+}
+.slider3{
+  background-image:url(images/post-23-copyright-485x665.jpg);
+  background-repeat: no-repeat;
+}
+.slider4{
+  background-image:url(images/post-24-copyright-485x598.jpg);
+  background-repeat: no-repeat;
+}
+.slider5{
+  background-image:url(images/post-23-copyright-485x598.jpg);
+  background-repeat: no-repeat;
 }

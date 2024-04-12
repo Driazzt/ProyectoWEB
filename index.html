@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+  <link>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Filmax</title>
+    <link><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header wrapper">
       <img
         src="images/logo-1x.png"
         alt="Logo de la empresa Filmax"
@@ -48,7 +49,7 @@
             <svg
               height="56.693px"
               style="
-                fill-rule: evenodd;
+                fill-rule: #ffffff;
                 clip-rule: evenodd;
                 stroke-linejoin: round;
                 stroke-miterlimit: 2;
@@ -68,11 +69,11 @@
                 />
                 <path
                   d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z"
-                  style="fill: rgb(3, 4, 4); fill-rule: nonzero"
+                  style="fill: #ffffff; fill-rule: nonzero"
                 />
                 <path
                   d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z"
-                  style="fill: rgb(3, 4, 4); fill-rule: nonzero"
+                  style="fill: #ffffff; fill-rule: nonzero"
                 />
               </g>
             </svg>
@@ -155,7 +156,7 @@
       </div>
     </header>
     <main>
-      <section class="hero-banner">
+      <section class="hero-banner wrapper">
         <img src="/images/top-promo.jpg" alt="" class="hero-banner__image" />
         <div class="hero-banner__data">
           <p class="hero-banner__tittle">TYLER PERRY'S MADEA HALLOWEEN</p>
@@ -163,35 +164,65 @@
             Perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium
           </p>
-          <a href="" class="hero-banner__link"></a>
+          <a href="" class="hero-banner__link">Read More</a>
         </div>
+        <aside class="aside">
+          <h2 class="aside__tittle">Recent News</h2>
+          <ul class="aside__list">
+            <li>
+            <div class="aside__item">
+              <img src="images/post-6-copyright-97x81.jpg" alt="" class="" />
+              <div>
+                <h3 class="aside__subtittle">
+                  Attending 'Star Wars' Screening in 'Star Trek' Costume
+                </h3>
+              </div>
+              <time class="aside__date">On Dec 15, 2017</time>
+            </li>
+            <li class="aside__item">
+              <img src="images/post-5-copyright-97x81.jpg" alt="" class="" />
+              <div>
+                <h3 class="aside__subtittle">
+                  Reuniting at the 2018 Coachella Music Festival
+                </h3>
+              </div>
+              <time class="aside__date">On Dec 12, 2017</time>
+            </li>
+            <li class="aside__item">
+              <img src="images/post-12-copyright-97x81.jpg" alt="" class="" />
+              <div>
+                <h3 class="aside__subtittle">
+                  'Titanic', 'Goonies' Named National Film Treasures
+                </h3>
+              </div>
+              <time class="aside__date">On Dec 8, 2017</time>
+            </li>
+          </ul>
+        </aside>
       </section>
-      <aside class="aside">
-        <h2 class="aside__tittle">Recent News</h2>
-        <ul class="aside__list">
-          <li class="aside__item">
-            <img src="images/post-6-copyright-97x81.jpg" alt="" class="" />
-            <h3 class="aside__subtittle">
-              Attending 'Star Wars' Screening in 'Star Trek' Costume
-            </h3>
-            <time class="aside__date">On Dec 15, 2017</time>
-          </li>
-          <li class="aside__item">
-            <img src="images/post-5-copyright-97x81.jpg" alt="" class="" />
-            <h3 class="aside__subtittle">
-              Reuniting at the 2018 Coachella Music Festival
-            </h3>
-            <time class="aside__date">On Dec 12, 2017</time>
-          </li>
-          <li class="aside__item">
-            <img src="images/post-12-copyright-97x81.jpg" alt="" class="" />
-            <h3 class="aside__subtittle">
-              'Titanic', 'Goonies' Named National Film Treasures
-            </h3>
-            <time class="aside__date">On Dec 8, 2017</time>
-          </li>
-        </ul>
-      </aside>
+      <section class="slider-films wrapper">
+        <div class="slider-films__button">Recent Trailers</div>
+        <div class="slider-films__button">Most popular</div>
+        <div class="slider-films__button">Best</div>
+        <article class="slider">
+          <div class="slider__slide">
+            <h3><a href="">The Injustice</a></h3>
+            <span></span>
+          </div>
+          <div class="slider__slide">
+            <h3> <a href="">Happy death day</a></h3>
+          </div>
+          <div class="slider__slide">
+            <h3> <a href=""> </a></h3>
+          </div>
+          <div class="slider__slide">
+            <h3> <a href="">Gotham</a></h3>
+          </div>
+          <div class="slider__slide">
+            <h3><a href="">The witcher</a></h3>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
