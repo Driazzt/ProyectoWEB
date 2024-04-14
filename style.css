@@ -174,17 +174,21 @@ aside {
 .aside__item {
   display: flex;
   gap:20px;
+  font-family: "Roboto Condensed", sans-serif;
+
 }
 
-.aside__subtitle {
+.aside__subtittle {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   margin-bottom: 4px;
   display: flex;
 }
-.asside__date{
+.aside__date{
   color: #a8a8a8;
   font-size: 11px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 .slider{
