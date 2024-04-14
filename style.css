@@ -129,8 +129,7 @@ header {
   max-width: 75%;
   max-height: 610px;
   object-fit: cover;
-  /* ?¿¿?¿
-  flex-basis: 74%; */
+  flex-basis: 74%;
 }
 .hero-banner__data{
   position: absolute;
