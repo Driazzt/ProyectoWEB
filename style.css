@@ -104,7 +104,7 @@ header {
 }
 .main-menu{
   font-family: "Roboto Condensed", sans-serif;
-  gap: 55px;
+  gap: 26px;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -212,6 +212,7 @@ aside {
   font-family:"Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: 1,1px;
 }
 
 .slider__slide {
@@ -224,33 +225,43 @@ aside {
   height: 100%; 
 }
 
+.slider__slide > div {
+  padding: 18px;
+}
+/*  ****ESTO NO DEBERIA FUNCIONAR??****
+.slider__slide > h3 {
+  font-size: 12;
+  font-family: "Roboto", sans-serif;
+} */     
+
 .slider__slide svg {
   position: absolute;
   top: 50%;
-  bottom: 50%;
+  left: 50%;
   translate: -50% -50%;
-  border: 2px solid;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   padding: 15px;
 }
 
 .slider__slide:hover svg {
+  /* preguntar lo de los hijos directos slide > svg (div de por medio en este caso) */
   border: 2px solid rgba(255, 255, 255, 1);
   
 }
 
-.slider1 {
+.slide1 {
   background-image:url(images/post-19-copyright-485x598.jpg);
 }
-.slider2{
+.slide2{
   background-image:url(images/post-20-copyright-485x598.jpg);
 }
-.slider3{
+.slide3{
   background-image:url(images/post-23-copyright-485x665.jpg);
 }
-.slider4{
+.slide4{
   background-image:url(images/post-24-copyright-485x598.jpg);
 }
-.slider5{
+.slide5{
   background-image:url(images/post-23-copyright-485x598.jpg);
 }
