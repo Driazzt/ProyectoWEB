@@ -203,6 +203,9 @@ aside {
 
 .slider-films__buttons {
   margin-bottom: 34px;
+  background-color: transparent;
+  border: 0;
+  /* he añadido bckgrnd clor y border para quitar un boton raro */
 }
 
 .slider-films__button {
