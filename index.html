@@ -22,15 +22,10 @@
         />
         <ul class="main-menu">
           <li>Home</li>
-          <!-- estos span tengo que quitarlos para poner un ::before / ::after (siempre con un content) -->
-          <span>/</span>
           <li>Features</li>
-          <span>/</span>
           <li>About</li>
-          <span>/</span>
           <li>News</li>
-          <span>/</span>
-          <li>Contact</li>
+          <li>Contacts</li>
         </ul>
         <div class="tools-menu">
           <search class="search">
@@ -225,7 +220,7 @@
         </button>
         <article class="slider">
           <div class="slider__slide slide1">
-            <div>
+            <div class="slider__slide-data">
               <svg
                 height="512px"
                 id="Layer_1"
@@ -241,13 +236,14 @@
                   d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
                 />
               </svg>
-              <h3><a href="">The Injustice</a></h3>
-              <a href="">Comedy</a>, <a href="">Drama</a>,
-              <a href="">Thriller</a>
+              <h3 class="slider__slide-tittle">The Injustice<a href=""></a></h3>
+              <a class="slider__slide-genre" href="">Comedy</a>,
+              <a class="slider__slide-genre" href="">Drama</a>,
+              <a class="slider__slide-genre" href="">Thriller</a>
             </div>
           </div>
           <div class="slider__slide slide2">
-            <div>
+            <div class="slider__slide-data">
               <svg
                 height="512px"
                 id="Layer_1"
@@ -263,13 +259,17 @@
                   d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
                 />
               </svg>
-              <h3><a href="">Happy death day</a></h3>
-              <a href="">Comedy</a>, <a href="">Drama</a>,
-              <a href="">Thriller</a>
+              <h3 class="slider__slide-tittle">
+                Happy death day
+                <a href=""></a>
+              </h3>
+              <a class="slider__slide-genre" href="">Comedy</a>,
+              <a class="slider__slide-genre" href="">Drama</a>,
+              <a class="slider__slide-genre" href="">Thriller</a>
             </div>
           </div>
           <div class="slider__slide slide3">
-            <div>
+            <div class="slider__slide-data">
               <svg
                 height="512px"
                 id="Layer_1"
@@ -285,13 +285,14 @@
                   d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
                 />
               </svg>
-              <h3><a href="">Geostorm</a></h3>
-              <a href="">Comedy</a>, <a href="">Drama</a>,
-              <a href="">Thriller</a>
+              <h3 class="slider__slide-tittle">Geostorm<a href=""></a></h3>
+              <a class="slider__slide-genre" href="">Comedy</a>,
+              <a class="slider__slide-genre" href="">Drama</a>,
+              <a class="slider__slide-genre" href="">Thriller</a>
             </div>
           </div>
           <div class="slider__slide slide4">
-            <div>
+            <div class="slider__slide-data">
               <svg
                 height="512px"
                 id="Layer_1"
@@ -307,13 +308,14 @@
                   d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
                 />
               </svg>
-              <h3><a href="">Gotham</a></h3>
-              <a href="">Comedy</a>, <a href="">Drama</a>,
-              <a href="">Thriller</a>
+              <h3 class="slider__slide-tittle">Gotham<a href=""></a></h3>
+              <a class="slider__slide-genre" href="">Comedy</a>,
+              <a class="slider__slide-genre" href="">Drama</a>,
+              <a class="slider__slide-genre" href="">Thriller</a>
             </div>
           </div>
           <div class="slider__slide slide5">
-            <div>
+            <div class="slider__slide-data">
               <svg
                 height="512px"
                 id="Layer_1"
@@ -329,13 +331,44 @@
                   d="M405.2,232.9L126.8,67.2c-3.4-2-6.9-3.2-10.9-3.2c-10.9,0-19.8,9-19.8,20H96v344h0.1c0,11,8.9,20,19.8,20  c4.1,0,7.5-1.4,11.2-3.4l278.1-165.5c6.6-5.5,10.8-13.8,10.8-23.1C416,246.7,411.8,238.5,405.2,232.9z"
                 />
               </svg>
-              <h3><a href="">The witcher</a></h3>
-              <a href="">Comedy</a>, <a href="">Drama</a>,
-              <a href="">Thriller</a>
+              <h3 class="slider__slide-tittle">The witcher<a href=""></a></h3>
+              <a class="slider__slide-genre" href="">Comedy</a>,
+              <a class="slider__slide-genre" href="">Drama</a>,
+              <a class="slider__slide-genre" href="">Thriller</a>
             </div>
           </div>
         </article>
       </section>
+      <div class="long-samurai">
+        <section class="releases">
+          <img src="images/bg_samurai.jpg" alt="" />
+          <article class=""></article>
+        </section>
+      </div>
+      <div>
+        <article class="portraits">
+          <div class="portraits__films-pic1">
+            <img src="images/post-27-copyright-485x665.jpg" alt="" />
+          </div>
+          <div class="portrait__films-pic2">
+            <img src="images/post-25-copyright-485x665.jpg" alt="" />
+          </div>
+          <div class="portrait__films-pic3">
+            <img src="images/post-23-copyright-485x665.jpg" alt="" />
+          </div>
+          <div class="portrait__films-pic4">
+            <img src="images/post-29-copyright-485x665.jpg" alt="" />
+          </div>
+        </article>
+      </div>
     </main>
+    <!-- /* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */ -->
+    <div>
+      <ul class="stickys">
+        <li class="sticky1">icono carrito</li>
+        <li class="sticky2">icono imagenes</li>
+        <li class="sticky3">icono esconder panel</li>
+      </ul>
+    </div>
   </body>
 </html>

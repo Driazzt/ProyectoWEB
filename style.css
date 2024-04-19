@@ -5,48 +5,130 @@
 
 /* CSS RESET */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* RESET END */
@@ -56,7 +138,7 @@ body {
   color: #ffffff;
 }
 
-.background{
+.background {
   background-color: #1a1d24;
 }
 
@@ -68,7 +150,7 @@ svg {
 
 a {
   color: #ffffff;
-  font-family:"Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -76,18 +158,20 @@ a {
   letter-spacing: 1px;
 }
 
-main{
+main {
   background-color: #f2f2f2;
 }
 
-.wrapper{
+.wrapper {
   max-inline-size: 1200px;
   margin: auto;
 }
 
-.header, .main-menu, .tools-menu, .social-menu   {
-  display:flex;
-
+.header,
+.main-menu,
+.tools-menu,
+.social-menu {
+  display: flex;
 }
 
 header {
@@ -99,25 +183,37 @@ header {
 }
 
 .logo {
-  width: 88px ;
+  width: 88px;
   height: auto;
 }
-.main-menu{
+.main-menu {
   font-family: "Roboto Condensed", sans-serif;
-  gap: 26px;
+  /* gap: 26px; */
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.tools-menu {
-  gap:100px;
+.main-menu li:not(:last-child)::after {
+  content: "/";
+  padding-inline: 25px;
+}
 
+/* TEMPORALMENTE DESACTIVADO)   .tools-menu {
+  gap:100px;
+  
+} */
+
+.tools-menu .search:not(:last-child)::after {
+  content: "|";
+  display: inline-block;
+  vertical-align: middle;
+  padding-inline: 25px;
+  color: #bdbdbd;
 }
 
 .social-menu {
   gap: 26px;
 }
-
 .hero-banner {
   position: relative;
   display: flex;
@@ -125,13 +221,13 @@ header {
   padding-bottom: 200px;
 }
 
-.hero-banner__image{
+.hero-banner__image {
   max-width: 75%;
   max-height: 610px;
   object-fit: cover;
   flex-basis: 74%;
 }
-.hero-banner__data{
+.hero-banner__data {
   position: absolute;
   bottom: 200px;
   right: 0;
@@ -139,9 +235,8 @@ header {
   max-width: 400px;
   padding-top: 33px;
   padding-left: 29px;
-
 }
-.hero-banner__tittle{
+.hero-banner__tittle {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 37px;
 }
@@ -153,12 +248,12 @@ header {
   margin-block: 22px;
 }
 
-/* COMPROBAR TODO DESDE AQUI, ALGO FALLA */
+/* empieza el aside */
 aside {
   width: 25%;
 }
 
-.aside__tittle{
+.aside__tittle {
   margin-bottom: 32px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 17px;
@@ -173,9 +268,8 @@ aside {
 
 .aside__item {
   display: flex;
-  gap:20px;
+  gap: 20px;
   font-family: "Roboto Condensed", sans-serif;
-
 }
 
 .aside__subtittle {
@@ -184,14 +278,14 @@ aside {
   margin-bottom: 4px;
   display: flex;
 }
-.aside__date{
+.aside__date {
   color: #a8a8a8;
   font-size: 11px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
 
-.slider{
+.slider {
   display: flex;
   height: 400px;
   gap: 20px;
@@ -212,10 +306,20 @@ aside {
   background-color: transparent;
   border: 0;
   color: #b8b8b8;
-  font-family:"Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
-  letter-spacing: 1,1px;
+  letter-spacing: 1, 1px;
+}
+
+/* .slider-films__button :active
+.slider-films__button :hover {
+
+} */
+
+.slider-films__button::after {
+  content: "/";
+  /* padding-inline; */
 }
 
 .slider__slide {
@@ -225,17 +329,17 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   width: 20%;
-  height: 100%; 
+  height: 100%;
 }
 
 .slider__slide > div {
   padding: 18px;
 }
 /*  ****ESTO NO DEBERIA FUNCIONAR??****
-.slider__slide > h3 {
-  font-size: 12;
+.slider__slide h3 {
   font-family: "Roboto", sans-serif;
-} */     
+  font
+} */
 
 .slider__slide svg {
   position: absolute;
@@ -250,21 +354,87 @@ aside {
 .slider__slide:hover svg {
   /* preguntar lo de los hijos directos slide > svg (div de por medio en este caso) */
   border: 2px solid rgba(255, 255, 255, 1);
-  
+}
+
+/* .slider__slide-data{
+} */
+
+.slider__slide-tittle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 17;
+  text-transform: uppercase;
+}
+
+.slider__slide-genre {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 13;
+  text-transform: capitalize;
+  color: #bdbdbd;
 }
 
 .slide1 {
-  background-image:url(images/post-18-copyright-485x665.jpg);
+  background-image: linear-gradient(transparent 50%, #000000),
+    url(images/post-18-copyright-485x665.jpg);
 }
-.slide2{
-  background-image:url(images/post-19-copyright-485x598.jpg);
+.slide2 {
+  background-image: linear-gradient(transparent 50%, #000000),
+    url(images/post-19-copyright-485x598.jpg);
 }
-.slide3{
-  background-image:url(images/post-20-copyright-485x598.jpg);
+.slide3 {
+  background-image: linear-gradient(transparent 50%, #000000),
+    url(images/post-20-copyright-485x598.jpg);
 }
-.slide4{
-  background-image:url(images/post-21-copyright-485x665.jpg);
+.slide4 {
+  background-image: linear-gradient(transparent 50%, #000000),
+    url(images/post-21-copyright-485x665.jpg);
 }
-.slide5{
-  background-image:url(images/post-22-copyright-485x665.jpg);
+.slide5 {
+  background-image: linear-gradient(transparent 50%, #000000),
+    url(images/post-22-copyright-485x665.jpg);
+}
+
+.long-samurai {
+  background-image: url(images/bg_samurai.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  margin-top: 80px;
+}
+.releases {
+  display: flex;
+}
+
+.portraits {
+  display: flex;
+  height: 400px;
+}
+
+.portraits__films {
+  display: flex;
+  position: absolute;
+  align-items: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic1 {
+  background-image: url(images/post-27-copyright-485x665.jpg);
+}
+
+/* COMPLETAR CON LA CLASE, ESTABA DEMASIADO CANSADO, FALTAN LAS LINEAS DE LAS FOTOS Y TITULOS, EL LOGO DEL SAMURAI Y LAS PELICULAS */
+
+/* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */
+.stickys {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  /* TAMBIEN SE PUEDE PONER TRANSLATE 0 -50% */
+  color: #ffffff;
+}
+.sticky1 {
+  width: 60px;
+  height: 60px;
 }
