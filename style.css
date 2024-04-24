@@ -71,7 +71,7 @@ aside,
 canvas,
 details,
 embed,
-figure,
+button figure,
 figcaption,
 footer,
 header,
@@ -85,8 +85,7 @@ summary,
 time,
 mark,
 audio,
-video,
-button {
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -211,6 +210,10 @@ header {
   color: #bdbdbd;
 }
 
+/* PONER A TODOS LOS HOVER Y EL ACTIVE, NO SE ME ACTIVAN. svg:active,
+svg:hover{
+  color: #ffffff;
+} */
 .social-menu {
   gap: 26px;
 }
@@ -297,9 +300,6 @@ aside {
 
 .slider-films__buttons {
   margin-bottom: 34px;
-  background-color: transparent;
-  border: 0;
-  /* he añadido bckgrnd clor y border para quitar un boton raro */
 }
 
 .slider-films__button {
@@ -309,17 +309,20 @@ aside {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
-  letter-spacing: 1, 1px;
+  letter-spacing: 1.1px;
 }
 
-/* .slider-films__button :active
-.slider-films__button :hover {
+.slider-films__button:active,
+.slider-films__button:hover {
+  color: #ffffff;
+}
 
-} */
-
-.slider-films__button::after {
+.slider-films__button:not(:last-child):after {
   content: "/";
-  /* padding-inline; */
+  display: inline-block;
+  vertical-align: middle;
+  padding-inline: 25px;
+  color: #bdbdbd;
 }
 
 .slider__slide {
@@ -335,11 +338,12 @@ aside {
 .slider__slide > div {
   padding: 18px;
 }
-/*  ****ESTO NO DEBERIA FUNCIONAR??****
-.slider__slide h3 {
-  font-family: "Roboto", sans-serif;
-  font
-} */
+
+.slider__slide-data h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+}
 
 .slider__slide svg {
   position: absolute;
@@ -356,42 +360,35 @@ aside {
   border: 2px solid rgba(255, 255, 255, 1);
 }
 
-/* .slider__slide-data{
-} */
-
-.slider__slide-tittle {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 17;
-  text-transform: uppercase;
-}
-
-.slider__slide-genre {
+.slider__slide-data a {
+  /* padding: 18px; */
   font-family: "Roboto", sans-serif;
   display: inline-block;
   margin-top: 5px;
   font-size: 13;
+  padding-right: 2px;
   text-transform: capitalize;
   color: #bdbdbd;
 }
 
 .slide1 {
-  background-image: linear-gradient(transparent 50%, #000000),
+  background-image: linear-gradient(transparent 50%, #00000080),
     url(images/post-18-copyright-485x665.jpg);
 }
 .slide2 {
-  background-image: linear-gradient(transparent 50%, #000000),
+  background-image: linear-gradient(transparent 50%, #00000080),
     url(images/post-19-copyright-485x598.jpg);
 }
 .slide3 {
-  background-image: linear-gradient(transparent 50%, #000000),
+  background-image: linear-gradient(transparent 50%, #00000080),
     url(images/post-20-copyright-485x598.jpg);
 }
 .slide4 {
-  background-image: linear-gradient(transparent 50%, #000000),
+  background-image: linear-gradient(transparent 50%, #00000080),
     url(images/post-21-copyright-485x665.jpg);
 }
 .slide5 {
-  background-image: linear-gradient(transparent 50%, #000000),
+  background-image: linear-gradient(transparent 50%, #00000080),
     url(images/post-22-copyright-485x665.jpg);
 }
 
