@@ -210,8 +210,8 @@ header {
   color: #bdbdbd;
 }
 
-/* PONER A TODOS LOS HOVER Y EL ACTIVE, NO SE ME ACTIVAN. svg:active,
-svg:hover{
+/* !!!!!!!!!PONER A TODOS LOS HOVER. svg:active (realmente no necesario),
+.facebook svg:hover{
   color: #ffffff;
 } */
 .social-menu {
@@ -365,7 +365,7 @@ aside {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   margin-top: 5px;
-  font-size: 13;
+  font-size: 13px;
   padding-right: 2px;
   text-transform: capitalize;
   color: #bdbdbd;
