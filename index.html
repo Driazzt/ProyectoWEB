@@ -164,7 +164,31 @@
               Perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium
             </p>
-            <a href="" class="hero-banner__link">Read More</a>
+            <a href="" class="hero-banner__link"
+              >Read More
+              <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <rect fill="none" height="256" width="256" />
+                <line
+                  fill="none"
+                  stroke="#e0041d"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="8"
+                  x1="40"
+                  x2="216"
+                  y1="128"
+                  y2="128"
+                />
+                <polyline
+                  fill="none"
+                  points="144 56 216 128 144 200"
+                  stroke="#e0041d"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="8"
+                />
+              </svg>
+            </a>
           </div>
           <aside class="aside">
             <h2 class="aside__tittle">Recent News</h2>
@@ -339,36 +363,128 @@
           </div>
         </article>
       </section>
-      <div class="long-samurai">
-        <section class="releases">
-          <img src="images/bg_samurai.jpg" alt="" />
-          <article class=""></article>
+      <!-- sesion 10,practicas, 1h,34min repasar -->
+      <div class="background">
+        <section class="releases wrapper">
+          <article class="releases__article">
+            <img src="images/bg_samurai.jpg" alt="" />
+          </article>
         </section>
-      </div>
-      <div>
-        <article class="portraits">
-          <div class="portraits__films-pic1">
-            <img src="images/post-27-copyright-485x665.jpg" alt="" />
+        <div class="Samurai__title"></div>
+        <!-- EMPIEZAN LAS 4 IMAGENES CON EL HOVER -->
+        <div>
+          <section>
+            <article class="portraits">
+              <div class="portraits__films-pic1">
+                <img src="images/post-27-copyright-485x665.jpg" alt="" />
+              </div>
+              <div class="portrait__films-pic2">
+                <img src="images/post-25-copyright-485x665.jpg" alt="" />
+              </div>
+              <div class="portrait__films-pic3">
+                <img src="images/post-23-copyright-485x665.jpg" alt="" />
+              </div>
+              <div class="portrait__films-pic4">
+                <img src="images/post-29-copyright-485x665.jpg" alt="" />
+              </div>
+            </article>
+          </section>
+        </div>
+        <!-- aqui comienza la parte roja con los comentarios TODO VA DENTRO DEL MAIN -->
+        <section class="opinions">
+          <div class="wrapper opinions__wrapper">
+            <article class="opinions__opinion">
+              <div class="opinions__image-box">
+                <img
+                  src="images/team-11-copyright-105x105.jpg"
+                  alt=""
+                  class="opinions__image"
+                />
+              </div>
+              <p class="opinions__text">
+                "It was so much fun for all of my friends and family."
+              </p>
+              <p class="opinions__name">Lisa Morrison</p>
+              <p class="opinions__job">Film Expert</p>
+            </article>
+            <article class="opinions__opinion">
+              <div class="opinions__image-box">
+                <img
+                  src="images/1test-copyright-105x105.jpg"
+                  alt=""
+                  class="opinions__image"
+                />
+              </div>
+              <p class="opinions__text">
+                "I appreciate the high quality of your products guys!"
+              </p>
+              <p class="opinions__name">Martin Moore</p>
+              <p class="opinions__job">Film Expert</p>
+            </article>
+            <article class="opinions__opinion">
+              <div class="opinions__image-box">
+                <img
+                  src="images/2test-copyright-105x105.jpg"
+                  alt=""
+                  class="opinions__image"
+                />
+              </div>
+              <p class="opinions__text">
+                "Everything is great about this website, we liked it."
+              </p>
+              <p class="opinions__name">Andrea Garcia</p>
+              <p class="opinions__job">Film Expert</p>
+            </article>
+            <article class="opinions__opinion">
+              <div class="opinions__image-box">
+                <img
+                  src="images/3test-copyright-105x105.jpg"
+                  alt=""
+                  class="opinions__image"
+                />
+              </div>
+              <p class="opinions__text">
+                "This was fun for all of my friends. Thank you so much!"
+              </p>
+              <p class="opinions__name">Mike Stevens</p>
+              <p class="opinions__job">Film Expert</p>
+            </article>
           </div>
-          <div class="portrait__films-pic2">
-            <img src="images/post-25-copyright-485x665.jpg" alt="" />
-          </div>
-          <div class="portrait__films-pic3">
-            <img src="images/post-23-copyright-485x665.jpg" alt="" />
-          </div>
-          <div class="portrait__films-pic4">
-            <img src="images/post-29-copyright-485x665.jpg" alt="" />
-          </div>
-        </article>
+        </section>
+        <!-- EMPIEZA EL GRID -->
+        <div>
+          <section>
+            <article class="grid__images wrapper">
+              <img src="images/post-3-copyright-1170x658.jpg" alt="" />
+              <span class="post__categories">
+                <a href="" class="post__categories__types">Home grid</a>
+              </span>
+              <h1>
+                <a href="">9 Films are vying for foreign oscar nomination</a>
+              </h1>
+              <div class="grid__date"></div>
+            </article>
+            <article class="grid__images">
+              <img src="images/post-5-copyright-760x428.jpg" alt="" />
+            </article>
+            <article class="grid__images">
+              <img src="images/post-6-copyright-760x428.jpg" alt="" />
+            </article>
+            <article class="grid__images">
+              <img src="images/post-12-copyright-760x428.jpg" alt="" />
+            </article>
+          </section>
+        </div>
       </div>
     </main>
-    <!-- /* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */ -->
-    <div>
-      <ul class="stickys">
-        <li class="sticky1">icono carrito</li>
-        <li class="sticky2">icono imagenes</li>
-        <li class="sticky3">icono esconder panel</li>
-      </ul>
-    </div>
   </body>
 </html>
+
+<!-- EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S -->
+<!-- <div>
+            <ul class="stickys">
+              <li class="sticky1">icono carrito</li>
+              <li class="sticky2">icono imagenes</li>
+              <li class="sticky3">icono esconder panel</li>
+            </ul>
+          </div> -->
