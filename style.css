@@ -261,7 +261,7 @@ header {
   display: inline-block;
   width: 20px;
   height: 20px;
-  stroke: #e0041d
+  stroke: #e0041d;
 }
 /* empieza el aside */
 aside {
@@ -404,20 +404,55 @@ aside {
     url(images/post-22-copyright-485x665.jpg);
 }
 
-.releases {
+.bg-image {
   background-image: url(images/bg_samurai.jpg);
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: end;
+  background-size: cover;
+  position: relative;
   margin-top: 80px;
 }
-.releases__article {
+.releases {
   display: flex;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 37px;
-  color: #1a1d24;  
+  justify-content: end;
+  align-items: center;
+  min-height: 511px;
+  color: #1a1d24;
 }
 
+.releases__article {
+  width: 50%;
+}
+
+.releases__title {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #737373;
+}
+
+.releases__title::before {
+  /* asi es como se hacen las rallitas de colores como separadores */
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 1px;
+  background-color: rgb(224, 4, 29);
+}
+
+.releases__subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 37px;
+}
+
+.releases__info {
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
 .portraits {
   display: flex;
   height: 400px;
@@ -441,8 +476,6 @@ aside {
 
 .grid__images {
   display: grid;
-
-
 }
 
 .stickys {
@@ -457,8 +490,6 @@ aside {
   width: 60px;
   height: 60px;
 }
-
-
 
 /* COMILLAS SVG: <svg
               fill="#ffffff"
@@ -491,5 +522,4 @@ aside {
               </g>
             </svg> */
 
-
-            /* https://www.svgrepo.com/vectors/favorite/ */
+/* https://www.svgrepo.com/vectors/favorite/ */
