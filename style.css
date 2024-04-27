@@ -453,6 +453,15 @@ aside {
   font-size: 13px;
   text-transform: uppercase;
 }
+
+.releases__description {
+}
+
+.releases__actions {
+}
+
+.releases__link {
+}
 .portraits {
   display: flex;
   height: 400px;
