@@ -510,7 +510,7 @@ aside {
 
 .movies {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .movies__article {
@@ -554,6 +554,8 @@ aside {
 .grid__images {
   display: grid;
 }
+
+/* comienzo del footer */
 
 /* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */
 .stickys {
