@@ -599,15 +599,32 @@ h3.movies__title::before {
 .opinions__opinion {
   flex-shrink: 0;
   /* flex-basis: 33%; */
-  width: 31%;
+  width: calc(33.333% - 30px);
   /* el width se puede utilizar en vez del flex basis (PERO lo tuve que poner al 30-31% para poder ver todo el texto... */
   text-align: center;
   scroll-snap-align: start;
 }
 
 .opinions__image {
-  position: relative;
   border-radius: 50%;
+}
+
+.opinions__image-box {
+  position: relative;
+}
+
+.opinions__image-box::after {
+  content: url(images/quoteblancasvg.svg);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  translate: -50%;
+  background-color: #1a1d24;
+  border-radius: 50%;
+  padding: 6px;
 }
 
 .opinions__text {
@@ -635,20 +652,6 @@ h3.movies__title::before {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   text-align: center;
-}
-
-.opinions__image-box::after {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  content: url();
-  display: inline-block;
-  width: 25px;
-  height: 23px;
-  translate: -50%;
-  background-color: #1a1d24;
-  border-radius: 50%;
-  padding: 6px;
 }
 
 /* comienza el grid */
