@@ -679,7 +679,7 @@ h3.movies__title::before {
 
 /* comienzo del footer */
 
-/* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */
+/* ASIDE BAR (FIXED A TODA LA PAG)*/
 .asidebar {
   position: fixed;
   top: 50%;
