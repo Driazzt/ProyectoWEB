@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background">
+    <div class="background sticky">
       <header class="header wrapper">
         <img
           src="images/logo-1x.png"
@@ -166,26 +166,12 @@
             </p>
             <a href="" class="hero-banner__link"
               >Read More
-              <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                <rect fill="none" height="256" width="256" />
-                <line
-                  fill="none"
-                  stroke="#e0041d"
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stoke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="8"
-                  x1="40"
-                  x2="216"
-                  y1="128"
-                  y2="128"
-                />
-                <polyline
-                  fill="none"
-                  points="144 56 216 128 144 200"
-                  stroke="#e0041d"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="8"
                 />
               </svg>
             </a>
@@ -363,7 +349,7 @@
           </div>
         </article>
       </section>
-      <!-- sesion 10,practicas, 1h,45min ver video -->
+      <!-- sesion 10,practicas -->
       <div class="bg-image">
         <section class="releases wrapper">
           <article class="releases__article">
@@ -398,6 +384,14 @@
             <a href="" class="movies__genre">Adventure</a>
             <div class="movies__actions">
               <a href="" class="movies__links">Watch trailer</a>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stoke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <a href="" class="movies__links">More Information</a>
             </div>
           </div>
@@ -411,24 +405,16 @@
           <div class="movies__data">
             <h3 class="movies__title">Band of Brothers</h3>
             <a href="" class="movies__genre">Adventure</a>
-            <div class="movies__action">
+            <div class="movies__actions">
               <a href="" class="movies__links">Watch trailer</a>
-              <a href="" class="movies__links">More Information</a>
-            </div>
-          </div>
-        </article>
-        <article class="movies__article">
-          <img
-            src="images/post-29-copyright-485x665.jpg"
-            alt=""
-            class="movies__image"
-          />
-          <div class="movies__data">
-            <h3 class="movies__title">Gladiator</h3>
-            <a href="" class="movies__genre">Action</a>
-            <a href="" class="movies__genre">Adventure</a>
-            <div class="movies__action">
-              <a href="" class="movies__links">Watch trailer</a>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stoke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <a href="" class="movies__links">More Information</a>
             </div>
           </div>
@@ -443,8 +429,40 @@
             <h3 class="movies__title">Pirates Bay</h3>
             <a href="" class="movies__genre">Action</a>
             <a href="" class="movies__genre">Adventure</a>
-            <div class="movies__action">
+            <div class="movies__actions">
               <a href="" class="movies__links">Watch trailer</a>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stoke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <a href="" class="movies__links">More Information</a>
+            </div>
+          </div>
+        </article>
+        <article class="movies__article">
+          <img
+            src="images/post-29-copyright-485x665.jpg"
+            alt=""
+            class="movies__image"
+          />
+          <div class="movies__data">
+            <h3 class="movies__title">Gladiator</h3>
+            <a href="" class="movies__genre">Action</a>
+            <a href="" class="movies__genre">Adventure</a>
+            <div class="movies__actions">
+              <a href="" class="movies__links">Watch trailer</a>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 12H18M18 12L13 7M18 12L13 17"
+                  stoke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
               <a href="" class="movies__links">More Information</a>
             </div>
           </div>
@@ -535,6 +553,8 @@
           </article>
         </section>
       </div>
+    </main>
+    <footer>
       <div>
         <section class="footer">
           <article class="footer__data">
@@ -563,12 +583,8 @@
           </article>
           <article>
             <h1 class="footer__title">Newsletter</h1>
-            <input
-              type="email"
-              name="emal"
-              placeholder="Newsletter Sign Up"
-            ></input>
-            <input type="submit" value></input>
+            <input type="email" name="emal" placeholder="Newsletter Sign Up" />
+            <input type="submit" value="completar" />
             <div class="footer__svg">
               <ul class="footer__social-menu">
                 <li>
@@ -609,15 +625,13 @@
           </article>
         </section>
       </div>
-    </main>
+    </footer>
+    <aside class="asidebar">
+      <ul class="asidebar__container">
+        <li class="asidebar__item">1</li>
+        <li class="asidebar__item">2</li>
+        <li class="asidebar__item">3</li>
+      </ul>
+    </aside>
   </body>
 </html>
-
-<!-- EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S -->
-<!-- <div>
-            <ul class="stickys">
-              <li class="sticky1">icono carrito</li>
-              <li class="sticky2">icono imagenes</li>
-              <li class="sticky3">icono esconder panel</li>
-            </ul>
-          </div> -->

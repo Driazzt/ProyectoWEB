@@ -141,6 +141,12 @@ body {
   background-color: #1a1d24;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+
 svg {
   fill: currentColor;
   width: 16px;
@@ -264,7 +270,7 @@ header {
   stroke: #e0041d;
 }
 /* empieza el aside */
-aside {
+.aside {
   width: 25%;
 }
 
@@ -515,13 +521,15 @@ aside {
 
 .movies__article {
   position: relative;
+  background-color: #e0011a;
 }
+
 .movies__image {
   width: 100%;
   height: auto;
 }
 .movies__image::after {
-  content: linear-gradient(transparent 50%, #000000);
+  content: linear-gradient(transparent 50%, #00000080);
   position: absolute;
   left: 0;
   top: 0;
@@ -536,17 +544,111 @@ aside {
   margin-bottom: 3.1em;
 }
 
+h3.movies__title::before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 1px;
+  background-color: #f8b350;
+}
+.movies__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.movies__genre {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #bdbdbd;
+}
+.movies__actions svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke: #f8b350;
+  border-radius: 50%;
+}
 /* comienza la zona del background rojo con las opiniones */
 
 .opinions {
   display: flex;
   align-items: center;
-  background-color: #e0011a;
+  background-color: #e0041d;
+  /* height: 511px;
+  width: 1903px; */
 }
+
 .opinions__wrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
+  gap: 30px;
+  overflow-x: auto;
+  padding-block: 120px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.opinions__opinion {
+  flex-shrink: 0;
+  /* flex-basis: 33%; */
+  width: 31%;
+  /* el width se puede utilizar en vez del flex basis (PERO lo tuve que poner al 30-31% para poder ver todo el texto... */
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.opinions__image {
+  position: relative;
+  border-radius: 50%;
+}
+
+.opinions__text {
+  margin-block: 46px 1.85em;
+  /* line-height: 1.5em; */
+  /* font-size: 1.25em; */
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lora", serif;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.opinions__name {
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.opinions__job {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.opinions__image-box::after {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  content: url();
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  translate: -50%;
+  background-color: #1a1d24;
+  border-radius: 50%;
+  padding: 6px;
 }
 
 /* comienza el grid */
@@ -558,17 +660,24 @@ aside {
 /* comienzo del footer */
 
 /* EL DIV PARA LA BARRA LATERAL STICKY SE TENDRIA QUE LLAMAR ASIDE, PORQUE ESTA A UN LATERAL, PERO COINCIDE CON LOS OTROS ASIDE, CHECKEARLO TODO. FALTA BUSCAR LOS SVG'S */
-.stickys {
+.asidebar {
   position: fixed;
   top: 50%;
-  right: 0%;
+  right: 0;
   transform: translateY(-50%);
-  /* TAMBIEN SE PUEDE PONER TRANSLATE 0 -50% */
-  color: #ffffff;
 }
-.sticky1 {
+
+.asidebar__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.asidebar__item {
   width: 60px;
   height: 60px;
+  background-color: #e0041d;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 /* COMILLAS SVG: <svg
