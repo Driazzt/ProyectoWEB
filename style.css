@@ -542,6 +542,7 @@ header {
   bottom: 0;
   padding: 1em 2.38em 0;
   margin-bottom: 3.1em;
+  transition: all 0.5s;
 }
 
 h3.movies__title::before {
@@ -568,6 +569,22 @@ h3.movies__title::before {
   text-transform: capitalize;
   color: #bdbdbd;
 }
+.movies__actions {
+  position: relative;
+  bottom: -40px;
+  opacity: 0;
+  /* transition: all 0.5s; */
+}
+
+.movies__article:hover .movies__actions {
+  bottom: -30px;
+  opacity: 1;
+}
+
+.movies__article:hover .movies__data {
+  bottom: 60px;
+}
+
 .movies__actions svg {
   display: inline-block;
   width: 20px;
