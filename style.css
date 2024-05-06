@@ -208,6 +208,10 @@ header {
   
 } */
 
+.search svg {
+  fill: none;
+}
+
 .tools-menu .search:not(:last-child)::after {
   content: "|";
   display: inline-block;
@@ -528,8 +532,10 @@ header {
   width: 100%;
   height: auto;
 }
-.movies__image::after {
-  content: linear-gradient(transparent 50%, #00000080);
+.movies__article::before {
+  /* a las imagenes no se les puede hacer ni un after ni un before!! */
+  content: "";
+  background: linear-gradient(transparent 50%, #00000080);
   position: absolute;
   left: 0;
   top: 0;
@@ -673,10 +679,100 @@ h3.movies__title::before {
 
 /* comienza el grid sesion 13 2h50*/
 
-.grid__images {
-  display: grid;
+.news {
+  padding-block: 120px;
 }
 
+.news__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 37px;
+  letter-spacing: -0.3px;
+  gap: 34px;
+  color: #1a1d24;
+  text-transform: uppercase;
+}
+
+.news__title::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 48px;
+  background-color: #e0041d;
+}
+
+.news__description {
+  line-height: 1.1em;
+  margin-block: 8px 42px;
+  color: #737373;
+  font-size: 15px;
+}
+
+.news__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 30px;
+  grid-auto-rows: 270px;
+}
+
+.news__gridarticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1em 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  /* padding: 2.1em 1.9em; */
+}
+
+.news__gridarticle.article1 {
+  grid-row: span 2;
+}
+
+.news__gridarticle.article4 {
+  grid-column: span 2;
+  }
+
+.article1 {
+  font-size: 37px;
+  background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-3-copyright-1170x658.jpg);
+}
+
+.article2 {
+background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-12-copyright-760x428.jpg);
+font-size: 17px;
+}
+
+.article3 {
+background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-5-copyright-760x428.jpg);
+font-size: 17px;
+}
+
+.article4 {
+background-image: linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-6-copyright-760x428.jpg);
+font-size: 24px;
+}
+
+.news__gridcategory {
+font-family: "Roboto Condensed", sans-serif;
+font-size: 11px;
+color: #f8b350;
+margin-bottom: 20px;
+}
+
+.news__gridtitle {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.news__griddata {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  color: #d2d2d2;
+}
 /* comienzo del footer */
 
 /* ASIDE BAR (FIXED A TODA LA PAG)*/
