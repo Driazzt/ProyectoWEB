@@ -735,33 +735,37 @@ h3.movies__title::before {
 
 .news__gridarticle.article4 {
   grid-column: span 2;
-  }
+}
 
 .article1 {
   font-size: 37px;
-  background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-3-copyright-1170x658.jpg);
+  background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0/ 0.5)),
+    url(images/post-3-copyright-1170x658.jpg);
 }
 
 .article2 {
-background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-12-copyright-760x428.jpg);
-font-size: 17px;
+  background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0/ 0.5)),
+    url(images/post-12-copyright-760x428.jpg);
+  font-size: 17px;
 }
 
 .article3 {
-background-image:linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-5-copyright-760x428.jpg);
-font-size: 17px;
+  background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0/ 0.5)),
+    url(images/post-5-copyright-760x428.jpg);
+  font-size: 17px;
 }
 
 .article4 {
-background-image: linear-gradient(rgb(0 0 0 / 0.5) , rgb(0 0 0/ 0.5)), url(images/post-6-copyright-760x428.jpg);
-font-size: 24px;
+  background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0/ 0.5)),
+    url(images/post-6-copyright-760x428.jpg);
+  font-size: 24px;
 }
 
 .news__gridcategory {
-font-family: "Roboto Condensed", sans-serif;
-font-size: 11px;
-color: #f8b350;
-margin-bottom: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  color: #f8b350;
+  margin-bottom: 20px;
 }
 
 .news__gridtitle {
