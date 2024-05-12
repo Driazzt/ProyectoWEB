@@ -776,6 +776,42 @@ h3.movies__title::before {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
   color: #d2d2d2;
+  letter-spacing: 1px;
+}
+
+.news__date {
+  margin-right: 10px;
+}
+
+.news__likes {
+  color: #ffffff;
+  margin-right: 2.75px;
+}
+.news__comments {
+  color: #ffffff;
+  margin-right: 2.75px;
+}
+
+.news__comments svg {
+  margin-bottom: -3px;
+}
+
+.news__likes svg {
+  margin-bottom: -3px;
+}
+
+.post_counters_number {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  color: #d2d2d2;
+  margin-right: 2.75px;
+}
+
+.post_counters_label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  color: #d2d2d2;
+  margin-right: 2.75px;
 }
 /* comienzo del footer */
 
@@ -912,6 +948,8 @@ h3.movies__title::before {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  align-items: center;
+  justify-content: center;
 }
 .asidebar__container .carrito {
   width: 60px;
