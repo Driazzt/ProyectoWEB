@@ -201,12 +201,8 @@ header {
 .main-menu li:not(:last-child)::after {
   content: "/";
   padding-inline: 25px;
+  color: rgba(209, 209, 209, 0.5);
 }
-
-/* TEMPORALMENTE DESACTIVADO)   .tools-menu {
-  gap:100px;
-  
-} */
 
 .search svg {
   fill: none;
@@ -217,13 +213,9 @@ header {
   display: inline-block;
   vertical-align: middle;
   padding-inline: 25px;
-  color: #bdbdbd;
+  color: rgba(209, 209, 209, 0.5);
 }
 
-/* !!!!!!!!!PONER A TODOS LOS HOVER. svg:active (realmente no necesario),
-.facebook svg:hover{
-  color: #ffffff;
-} */
 .social-menu {
   gap: 26px;
 }
@@ -386,6 +378,8 @@ header {
   vertical-align: middle;
   padding-inline: 25px;
   color: #bdbdbd;
+  /* padding: 0px 0px 0px 15px; */
+  /* margin: 0px 0px 0px 13px; */
 }
 
 .slider__slide {
@@ -402,12 +396,35 @@ header {
   padding: 18px;
 }
 
-.slider__slide-data h3 {
+.slider__slide-tittle {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 17px;
+  letter-spacing: normal;
+}
+.slider__slide-tittle:hover {
+  color: #bdbdbd;
 }
 
+.slider__slide-genre:hover {
+  color: #ffffff;
+}
+
+/* .slider__slide-data h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+} */
+
+.slider__slide-genre {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 12px;
+  padding-right: 2px;
+  text-transform: capitalize;
+  color: #bdbdbd;
+}
 .slider__slide svg {
   position: absolute;
   top: 50%;
@@ -421,17 +438,6 @@ header {
 .slider__slide:hover svg {
   /* preguntar lo de los hijos directos slide > svg (div de por medio en este caso) */
   border: 2px solid rgba(255, 255, 255, 1);
-}
-
-.slider__slide-data a {
-  /* padding: 18px; */
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 13px;
-  padding-right: 2px;
-  text-transform: capitalize;
-  color: #bdbdbd;
 }
 
 .slide1 {
@@ -544,6 +550,10 @@ header {
   color: #1a1d24;
 }
 
+.releases__link:hover {
+  color: #e0041d;
+}
+
 .releases__link:first-child {
   color: #e0041d;
   margin-right: 20px;
@@ -613,6 +623,11 @@ h3.movies__title::before {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 15px;
+}
+
+.movies__title:hover {
+  color: #bdbdbd;
 }
 
 .movies__genre {
@@ -621,6 +636,17 @@ h3.movies__title::before {
   text-transform: capitalize;
   color: #bdbdbd;
 }
+/* PREGUNTAR COMO SE HACE!! */
+/* .movies__genre a:not(:last-child)::after {
+  content: "/";
+  padding-inline: 25px;
+  color: rgba(209, 209, 209, 0.5);
+} */
+
+.movies__genre:hover {
+  color: #ffffff;
+}
+
 .movies__actions {
   position: relative;
   bottom: -40px;
@@ -642,6 +668,10 @@ h3.movies__title::before {
   font-size: 11px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.movies__links:hover {
+  color: #bdbdbd;
 }
 
 .movies__links svg {
@@ -842,20 +872,23 @@ h3.movies__title::before {
   margin-right: 10px;
 }
 
-.news__likes {
+.news__date:hover {
   color: #ffffff;
+}
+
+.news__likes {
   margin-right: 2.75px;
 }
+
+.news__likes svg {
+  margin-bottom: -3px;
+}
+
 .news__comments {
-  color: #ffffff;
   margin-right: 2.75px;
 }
 
 .news__comments svg {
-  margin-bottom: -3px;
-}
-
-.news__likes svg {
   margin-bottom: -3px;
 }
 
