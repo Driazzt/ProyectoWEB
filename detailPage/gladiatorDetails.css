@@ -261,7 +261,7 @@ header {
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 0.25px;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   text-align: center;
   color: #ffffff;
@@ -273,8 +273,8 @@ header {
   letter-spacing: 0.25px;
   color: #a8a8a8;
   line-height: 23px;
-  margin-block: 22px;
-  margin-inline: 20px;
+  margin-block: 15px;
+  margin-inline: 15px;
   text-align: start;
 }
 
