@@ -608,7 +608,7 @@ header {
 
 .movies__image {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .movies__article::before {
   /* a las imagenes no se les puede hacer ni un after ni un before!! */
@@ -1142,25 +1142,19 @@ h3.movies__title::before {
   justify-content: center;
 }
 
-.asidebar__button {
+.asidebar__button__svg {
+  color: #ffffff;
   position: fixed;
-  top: 95%;
-  right: 0;
-  transform: translate(-50%);
-  gap: 3px;
+  bottom: 30px;
+  right: 30px;
   background-color: #1a1d24;
-  border: 0;
-  border-color: #1a1d24;
-  width: 45px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.asidebar__button__svg {
-  color: #ffffff;
-}
 
-.asidebar__button__svg:hover {
-  stroke: #e0041d;
-  /* fill: #e0041d; */
+.asidebar__button__svg:hover svg {
+  fill: #e0041d;
 }
