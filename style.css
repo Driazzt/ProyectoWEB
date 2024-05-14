@@ -1059,8 +1059,12 @@ h3.movies__title::before {
   translate: 0 -50%;
 }
 
+.footer__button svg {
+  stroke: #ffffff;
+}
+
 .footer__button:hover svg {
-  color: #e0011a;
+  stroke: #e0011a;
 }
 
 .footer__social__svg .twitter {
