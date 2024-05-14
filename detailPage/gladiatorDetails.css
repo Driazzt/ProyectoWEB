@@ -243,6 +243,65 @@ header {
   color: #e0011a;
 }
 
+/* MAIN */
+.movie {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding-bottom: 200px;
+}
+.movie__wallpaper {
+  max-width: 75%;
+  max-height: 610px;
+  object-fit: cover;
+  flex-basis: 74%;
+}
+.movie__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+}
+
+.movie__info {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.25px;
+  color: #a8a8a8;
+  line-height: 23px;
+  margin-block: 22px;
+  margin-inline: 20px;
+  text-align: start;
+}
+
+.movie__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin-block: 22px;
+  margin-inline: 20px;
+}
+.movie__link:hover {
+  color: #e0041d;
+}
+
+.movie__link svg {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  stroke: #e0041d;
+}
+
 /* FOOTER */
 .footer__wrapper {
   background-color: #1a1d24;
