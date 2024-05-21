@@ -132,6 +132,10 @@ table {
 
 /* RESET END */
 
+:root {
+  --color-rosa:pink;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
