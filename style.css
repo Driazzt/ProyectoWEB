@@ -133,16 +133,33 @@ table {
 /* RESET END */
 
 :root {
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --color-negro-matiz: #00000080;
+  --color-negro-bg: #1a1d24;
+  --color-blanco-roto: #f2f2f2;
+  --color-gris: #bdbdbd;
+  --color-gris-d2: #d2d2d2;
+  --color-gris-roto: #a8a8a8;
+  --color-gris-clarito: #b8b8b8;
+  --color-gris-b8ba: #b8babb;
+  --color-gris-artificial: #737373;
+  --color-azul-twitter: #1da1f3;
+  --color-azul-facebook: #3a559f;
+  --color-rosa-instagram: #ce2e92;
+  --color-rojo-youtube: #e0011a;
+  --color-rojo-intense: #e0041d;
+  --color-gold: #f8b350;
   --color-rosa: pink;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .background {
-  background-color: #1a1d24;
+  background-color: var(--color-negro-bg);
 }
 
 .sticky {
@@ -162,7 +179,7 @@ svg {
 }
 
 .link-default {
-  color: #ffffff;
+  color: var(--color-blanco);
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -170,7 +187,7 @@ svg {
 }
 
 main {
-  background-color: #f2f2f2;
+  background-color: var(--color-blanco-roto);
 }
 
 .wrapper {
@@ -198,7 +215,7 @@ header {
   height: auto;
 }
 .main-menu a {
-  color: #ffffff;
+  color: var(--color-blanco);
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -228,23 +245,23 @@ header {
 }
 
 .social-menu a {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .social-menu-twitter:hover {
-  color: #1da1f3;
+  color: var(--color-azul-twitter);
 }
 
 .social-menu-facebook:hover {
-  color: #3a559f;
+  color: var(--color-azul-facebook);
 }
 
 .social-menu-instagram:hover {
-  color: #ce2e92;
+  color: var(--color-rosa-instagram);
 }
 
 .social-menu-youtube:hover {
-  color: #e0011a;
+  color: var(--color-rojo-youtube);
 }
 
 .hero-banner {
@@ -264,7 +281,7 @@ header {
   position: absolute;
   bottom: 200px;
   right: 0;
-  background-color: #1a1d24;
+  background-color: var(--color-negro-bg);
   max-width: 400px;
   padding-top: 33px;
   padding-left: 29px;
@@ -275,7 +292,7 @@ header {
 }
 
 .hero-banner__description {
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
   font-size: 14px;
   line-height: 23px;
   margin-block: 22px;
@@ -285,7 +302,7 @@ header {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #ffffff;
+  color: var(--color-blanco);
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -293,14 +310,14 @@ header {
   margin-bottom: 5px;
 }
 .hero-banner__link:hover {
-  color: #e0041d;
+  color: var(--color-rojo-intense);
 }
 
 .hero-banner__link svg {
   display: inline-block;
   width: 20px;
   height: 20px;
-  stroke: #e0041d;
+  stroke: var(--color-rojo-intense);
 }
 /* empieza el aside */
 .aside {
@@ -342,15 +359,15 @@ header {
   margin-bottom: 4px;
   display: flex;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .aside__subtittle:hover {
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
 }
 
 .aside__date {
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
   font-size: 11px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
@@ -358,7 +375,7 @@ header {
 }
 
 .aside__date:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .slider {
@@ -378,7 +395,7 @@ header {
 .slider-films__button {
   background-color: transparent;
   border: 0;
-  color: #b8b8b8;
+  color: var(--color-gris-clarito);
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 13px;
@@ -387,7 +404,7 @@ header {
 
 .slider-films__button:active,
 .slider-films__button:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .slider-films__button:not(:last-child):after {
@@ -395,7 +412,7 @@ header {
   display: inline-block;
   vertical-align: middle;
   padding-inline: 25px;
-  color: #bdbdbd;
+  color: var(--color-gris);
   /* padding: 0px 0px 0px 15px; */
   /* margin: 0px 0px 0px 13px; */
 }
@@ -419,10 +436,10 @@ header {
   text-transform: uppercase;
   font-size: 17px;
   letter-spacing: normal;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 .slider__slide-tittle:hover {
-  color: #bdbdbd;
+  color: var(--color-gris);
 }
 
 .slider__slide-genre {
@@ -435,7 +452,7 @@ header {
   color: #bdbdbd;
 }
 .slider__slide-genre:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 /* .slider__slide-data h3 {
@@ -501,7 +518,7 @@ header {
   justify-content: end;
   align-items: center;
   min-height: 511px;
-  color: #1a1d24;
+  color: var(--color-negro-bg);
 }
 
 .releases__article {
@@ -515,7 +532,7 @@ header {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
-  color: #737373;
+  color: var(--color-gris-artificial);
   margin-bottom: 2.3em;
 }
 
@@ -549,7 +566,7 @@ header {
 
 .releases__description {
   font-family: "Roboto", sans-serif;
-  color: #737373;
+  color: var(--color-gris-artificial);
   font-size: 15px;
   margin-bottom: 2.3em;
   text-align: start;
@@ -566,7 +583,7 @@ header {
 }
 
 .releases__link {
-  color: #1a1d24;
+  color: var(--color-negro-bg);
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 13px;
@@ -576,11 +593,11 @@ header {
 }
 
 .releases__link:hover {
-  color: #e0041d;
+  color: var(--color-rojo-intense);
 }
 
 .releases__link:first-child {
-  color: #e0041d;
+  color: var(--color-rojo-intense);
   margin-right: 20px;
   gap: 2px;
 }
@@ -606,8 +623,6 @@ header {
 
 .movies__article {
   position: relative;
-  background-color: #000000ec;
-  /* no se que color poner para que se vea menos :( */
 }
 
 .movies__image {
@@ -638,13 +653,13 @@ h3.movies__title::before {
   display: inline-block;
   width: 44px;
   height: 1px;
-  background-color: #f8b350;
+  background-color: var(--color-gold);
 }
 .movies__title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 27px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-blanco);
   letter-spacing: 0.2px;
   display: flex;
   flex-direction: column;
@@ -653,14 +668,14 @@ h3.movies__title::before {
 }
 
 .movies__title:hover {
-  color: #bdbdbd;
+  color: var(--color-gris);
 }
 
 .movies__genre {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   text-transform: capitalize;
-  color: #bdbdbd;
+  color: var(--color-gris);
 }
 
 .movies__genre:nth-child(3)::before {
@@ -670,7 +685,7 @@ h3.movies__title::before {
 }
 
 .movies__genre:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .movies__actions {
@@ -692,19 +707,19 @@ h3.movies__title::before {
 .movies__links {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
-  color: #ffffff;
+  color: var(--color-blanco);
   text-transform: uppercase;
 }
 
 .movies__links:hover {
-  color: #bdbdbd;
+  color: var(--color-gris);
 }
 
 .movies__links svg {
   display: inline-block;
   width: 20px;
   height: 20px;
-  stroke: #f8b350;
+  stroke: var(--color-gold);
   border-radius: 100%;
   background-color: rgb(46, 48, 54);
   justify-content: center;
@@ -718,7 +733,7 @@ h3.movies__title::before {
 .opinions {
   display: flex;
   align-items: center;
-  background-color: #e0041d;
+  background-color: var(--color-rojo-intense);
   /* height: 511px;
   width: 1903px; */
 }
@@ -760,7 +775,7 @@ h3.movies__title::before {
   width: 25px;
   height: 23px;
   translate: -50%;
-  background-color: #1a1d24;
+  background-color: var(--color-negro-bg);
   border-radius: 50%;
   padding: 6px;
 }
@@ -772,7 +787,7 @@ h3.movies__title::before {
   font-size: 20px;
   text-align: center;
   font-family: "Lora", serif;
-  color: #ffffff;
+  color: var(--color-blanco);
   line-height: 30px;
 }
 
@@ -805,7 +820,7 @@ h3.movies__title::before {
   font-size: 37px;
   letter-spacing: -0.3px;
   gap: 34px;
-  color: #1a1d24;
+  color: var(--color-negro-bg);
   text-transform: uppercase;
 }
 
@@ -814,13 +829,13 @@ h3.movies__title::before {
   display: inline-block;
   height: 1px;
   width: 48px;
-  background-color: #e0041d;
+  background-color: var(--color-rojo-intense);
 }
 
 .news__description {
   line-height: 1.1em;
   margin-block: 8px 42px;
-  color: #737373;
+  color: var(--color-gris-artificial);
   font-size: 15px;
 }
 
@@ -883,13 +898,13 @@ h3.movies__title::before {
 .news__gridcategory {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
-  color: #f8b350;
+  color: var(--color-gold);
   margin-bottom: 20px;
   letter-spacing: 0.25px;
 }
 
 .news__gridtitle {
-  color: #ffffff;
+  color: var(--color-blanco);
   margin-bottom: 20px;
   font-family: "Roboto Condensed", sans-serif;
   /* font-size: 37px; */
@@ -897,18 +912,18 @@ h3.movies__title::before {
 .news__griddata a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
-  color: #d2d2d2;
+  color: var(--color-gris-d2);
   letter-spacing: 1px;
   margin-right: 10px;
 }
 
 .news__date:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .news__likes:hover svg {
   /* margin-right: 2.75px; */
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .news__likes svg {
@@ -917,7 +932,7 @@ h3.movies__title::before {
 
 .news__comments:hover svg {
   /* margin-right: 2.75px; */
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .news__comments svg {
@@ -927,25 +942,25 @@ h3.movies__title::before {
 .news__counters_number {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
-  color: #d2d2d2;
+  color: var(--color-gris-d2);
   margin-right: 2.75px;
 }
 
 .news__counters_number:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .news__counters_label {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 11px;
-  color: #d2d2d2;
+  color: var(--color-gris-d2);
   margin-right: 2.75px;
 }
 /* comienzo del footer */
 
 .footer__wrapper {
-  background-color: #1a1d24;
-  color: #b8babb;
+  background-color: var(--color-negro-bg);
+  color: var(--color-gris-b8ba);
   padding-block: 120px;
   display: grid;
   /* grid-template-columns: 1fr 0.5fr 0.75fr 1fr; */
@@ -965,7 +980,7 @@ h3.movies__title::before {
   margin-top: 30px;
   font-family: "Lora", "serif";
   font-size: 14px;
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
   font-weight: 400;
 }
 
@@ -973,12 +988,12 @@ h3.movies__title::before {
   text-transform: capitalize;
   font-family: "Lora", "serif";
   font-size: 14px;
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
   font-weight: 400;
 }
 
 .footer__link__rights:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__title {
@@ -988,13 +1003,13 @@ h3.movies__title::before {
   font-size: 17px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__title::after {
   content: "";
   display: inline-block;
-  background-color: #e0041d;
+  background-color: var(--color-rojo-intense);
   width: 28px;
   height: 1px;
   margin: -1px 0px 0px 16px;
@@ -1004,11 +1019,11 @@ h3.movies__title::before {
   font-family: "Lora", serif;
   text-transform: capitalize;
   font-size: 14px;
-  color: #a8a8a8;
+  color: var(--color-gris-roto);
 }
 
 .footer__links:hover {
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__data li {
@@ -1018,21 +1033,21 @@ h3.movies__title::before {
 .footer__email {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--color-blanco);
   letter-spacing: 2.2px;
   padding: 7px 35px 17px 0px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 11px;
-  color: #ffffff;
-  caret-color: #ffffff;
+  color: var(--color-blanco);
+  caret-color: var(--color-blanco);
   width: 100%;
 }
 .footer__form {
   position: relative;
 }
 .footer__email:focus {
-  border-color: #ffffff;
+  border-color: var(--color-blanco);
   outline: none;
 }
 
@@ -1042,7 +1057,7 @@ h3.movies__title::before {
   align-items: center;
   gap: 5px;
   padding: 40px 40px 40px 0px;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__button {
@@ -1056,43 +1071,43 @@ h3.movies__title::before {
 }
 
 .footer__button svg {
-  stroke: #ffffff;
+  stroke: var(--color-blanco);
 }
 
 .footer__button:hover svg {
-  stroke: #e0011a;
+  stroke: var(--color-rojo-youtube);
 }
 
 .footer__social__svg .twitter {
   padding: 10px;
   line-height: 0;
-  background-color: #1da1f3;
+  background-color: var(--color-azul-twitter);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__social__svg .facebook {
   padding: 10px;
   line-height: 0;
-  background-color: #3a559f;
+  background-color: var(--color-azul-facebook);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__social__svg .instagram {
   padding: 10px;
   line-height: 0;
-  background-color: #ce2e92;
+  background-color: var(--color-rosa-instagram);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 
 .footer__social__svg .youtube {
   padding: 10px;
   line-height: 0;
-  background-color: #e0011a;
+  background-color: var(--color-rojo-youtube);
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-blanco);
 }
 /* ASIDE BAR (FIXED A TODA LA PAG)*/
 .asidebar {
@@ -1115,8 +1130,8 @@ h3.movies__title::before {
 .asidebar__container .carrito {
   width: 60px;
   height: 60px;
-  background-color: #e0041d;
-  color: #e0041d;
+  background-color: var(--color-rojo-intense);
+  color: var(--color-rojo-intense);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1125,8 +1140,8 @@ h3.movies__title::before {
 .asidebar__container .gallery {
   width: 60px;
   height: 60px;
-  background-color: #e0041d;
-  color: #e0041d;
+  background-color: var(--color-rojo-intense);
+  color: var(--color-rojo-intense);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1135,19 +1150,19 @@ h3.movies__title::before {
 .asidebar__container .hidebar {
   width: 60px;
   height: 60px;
-  background-color: #e0041d;
-  color: #e0041d;
+  background-color: var(--color-rojo-intense);
+  color: var(--color-rojo-intense);
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .asidebar__button__svg {
-  color: #ffffff;
+  color: var(--color-blanco);
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #1a1d24;
+  background-color: var(--color-negro-bg);
   width: 50px;
   height: 50px;
   display: flex;
@@ -1156,5 +1171,5 @@ h3.movies__title::before {
 }
 
 .asidebar__button__svg:hover svg {
-  fill: #e0041d;
+  fill: var(--color-rojo-intense);
 }
