@@ -418,10 +418,11 @@ header {
 
 /* CAST */
 
-/* .movie__cast {
+.movie__cast {
   display: flex;
-  flex-direction:row
-} */
+  flex-direction:row;
+  gap: 15px;
+}
 .movie__cast__container {
   /* display: flex;
   flex-direction: column; */
@@ -446,12 +447,12 @@ header {
 .movie__cast__img {
   display: flex;
   flex-direction: row;
+  width: 200px;
 }
 .movie__cast__article{
   display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin: 0px 15px 0px 0px;
+  flex-direction: column;
+  /* margin: 0px 15px 0px 0px; */
 }
 
 .movie__cast__data {
@@ -460,8 +461,8 @@ header {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   justify-content: start;
-  text-align: start;
-  padding: 5px 15px 15px 0px;
+  text-align:start;
+  padding: 5px 0px 15px 0px;
 }
 
 .movie__cast__actorsname {
@@ -479,7 +480,7 @@ header {
 }
 
 /* FOOTER */
-.footer__wrapper {
+.footer__wrapper{
   background-color: #1a1d24;
   color: #b8babb;
   padding-block: 120px;
