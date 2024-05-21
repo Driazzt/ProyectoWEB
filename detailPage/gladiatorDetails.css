@@ -423,8 +423,8 @@ header {
   flex-direction:row
 } */
 .movie__cast__container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   text-align: start;
@@ -443,6 +443,10 @@ header {
   /* padding: 15px 15px 15px 0px; */
 }
 
+.movie__cast__img {
+  display: flex;
+  flex-direction: row;
+}
 .movie__cast__article{
   display: flex;
   flex-direction: row;
