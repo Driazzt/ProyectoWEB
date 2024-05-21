@@ -423,6 +423,14 @@ header {
   flex-direction:row;
   gap: 15px;
 }
+.movie__cast__container::before{
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 1px;
+    vertical-align: start;
+    background-color: rgb(224, 4, 29);
+}
 .movie__cast__container {
   /* display: flex;
   flex-direction: column; */
@@ -435,13 +443,13 @@ header {
 .movie__cast__title {
   color: #ffffff;
   font-size: 34px;
-  /* padding: 100px 5px 5px 0px; */
+  padding: 15px 0px 15px 0px;
 }
 
 .movie__cast__subtitle {
   color: #bdbdbd;
   font-size: 14px;
-  /* padding: 15px 15px 15px 0px; */
+  padding: 15px 15px 15px 0px;
 }
 
 .movie__cast__img {
