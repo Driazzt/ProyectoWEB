@@ -425,6 +425,7 @@ header {
   background-size: cover;
   width: 20%;
   height: 100%;
+  cursor: pointer;
 }
 
 .slider__slide > div {
