@@ -133,7 +133,7 @@ table {
 /* RESET END */
 
 :root {
-  --color-rosa:pink;
+  --color-rosa: pink;
 }
 
 body {
@@ -662,7 +662,7 @@ h3.movies__title::before {
   text-transform: capitalize;
   color: #bdbdbd;
 }
-/* PREGUNTAR COMO SE HACE!! */
+
 .movies__genre:nth-child(3)::before {
   content: "/";
   padding-inline: 5px;
@@ -713,7 +713,7 @@ h3.movies__title::before {
   margin-left: 5px;
 }
 
-/* comienza la zona del background rojo con las opiniones */
+/* OPINIONS */
 
 .opinions {
   display: flex;
@@ -902,14 +902,6 @@ h3.movies__title::before {
   margin-right: 10px;
 }
 
-/* .news__date {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 11px;
-  color: #d2d2d2;
-  letter-spacing: 1px;
-  margin-right: 10px;
-} */
-
 .news__date:hover {
   color: #ffffff;
 }
@@ -965,8 +957,8 @@ h3.movies__title::before {
   flex-direction: column;
   justify-content: start;
   text-align: start;
-  padding: 15px;
-  margin: 9px;
+  /* padding: 15px;
+  margin: 9px; */
 }
 
 .footer__rights {
