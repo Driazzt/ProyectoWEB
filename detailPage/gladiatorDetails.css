@@ -422,14 +422,6 @@ header {
   display: flex;
 }
 
-/* .movie__cast__title::before {
-  content: "";
-  display: inline-block;
-  width: 48px;
-  height: 1px;
-  background-color: rgb(224, 4, 29);
-} */
-
 .movie__cast__title {
   text-transform: uppercase;
   color: #ffffff;
@@ -449,10 +441,7 @@ header {
   color: #bdbdbd;
   padding: 15px 15px 15px 0px;
 }
-/* .movie__cast__article {
-  display: flex;
-  flex-direction: row;
-} */
+
 .movie__cast__article__box {
   display: flex;
   flex-direction: row;
