@@ -418,62 +418,60 @@ header {
 
 /* CAST */
 
-.movie__cast {
+/* .movie__cast {
   display: flex;
-}
-
-.movie__cast__title {
+  flex-direction:row
+} */
+.movie__cast__container {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
-  color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 34px;
-  display: flex;
-  text-align: center;
+  text-align: start;
   justify-content: start;
-  padding: 100px 5px 5px 0px;
+  padding: 60px 0px 60px 0px;
+}
+.movie__cast__title {
+  color: #ffffff;
+  font-size: 34px;
+  /* padding: 100px 5px 5px 0px; */
 }
 
 .movie__cast__subtitle {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
-  display: flex;
-  text-transform: uppercase;
   color: #bdbdbd;
-  padding: 15px 15px 15px 0px;
+  font-size: 14px;
+  /* padding: 15px 15px 15px 0px; */
 }
 
-.movie__cast__article__box {
+.movie__cast__article{
   display: flex;
   flex-direction: row;
-  position: relative;
+  gap: 15px;
+  margin: 0px 15px 0px 0px;
 }
 
 .movie__cast__data {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  justify-content: start;
+  text-align: start;
+  padding: 5px 15px 15px 0px;
 }
 
 .movie__cast__actorsname {
-  display: flex;
-  justify-content: start;
-  text-align: start;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
   color: #ffffff;
-  padding: 5px 5px 5px 0px;
+  /* padding: 5px 5px 5px 0px; */
   /* margin-inline: 10px; */
 }
 
 .movie__cast__charactername {
-  display: flex;
-  text-align: start;
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 10px;
-  text-transform: initial;
   color: #a8a8a8;
-  padding: 5px 15px 15px 0px;
-  /* margin-bottom: 15px; */
+  margin: 5px 0px;
+  /* padding: 5px 15px 15px 0px; */
 }
 
 /* FOOTER */
